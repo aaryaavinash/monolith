@@ -1,8 +1,10 @@
+import './tailwind.css';
 import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp } from '../../src/core/engine.js';
 import { Assets, firstMesh } from '../../src/core/assets.js';
 import { Pointer } from '../../src/core/input.js';
 import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+import { preloader, cursor, magnetic } from '../../src/core/ui.js';
 import { sunAngles, compassDir, palette, makePalette, phaseName, fmtTime, T0, T1, SUNRISE, SUNSET } from './sun.js';
 import { concreteTextures, floorTexture, patchModel, sectionOutline, GoldenGrade } from './materials.js';
 import { buildDiagram } from './diagram.js';
@@ -644,7 +646,7 @@ const rawToWorldY = y => rawToWorld(0, y, 0).y;
 const rawToWorldX = x => rawToWorld(x, 0, 0).x;
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
-worldNav('monolith', { theme: 'light', corner: 'br' });
+// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('monolith', { theme: 'light', corner: 'br' });
 const curs = cursor({ color: '#111110', blend: 'difference', size: 30 });
 if (curs) curs.root.style.setProperty('--c', '#f2f0ea');
 magnetic();
