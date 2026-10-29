@@ -1,8 +1,8 @@
-# 10 · Monolith — "Drag the sun across a house"
+# Monolith — "Drag the sun across a house"
 Brand: **Monolith** — a small architecture practice (Lisbon/Oslo) known for houses on extreme sites.
 
 ## Signature interaction
-**The sun is a handle.** The cliff villa diorama (`models/monolith/house.glb`) sits on a plinth in a gallery void (or a
+**The sun is a handle.** The cliff villa diorama (`models/house.glb`) sits on a plinth in a gallery void (or a
 real sky — decide what looks better). Drag the sun along a visible arc (or scroll) through a day: dawn (low, pink) → noon
 (hard, white, short shadows) → golden hour (long, amber) → blue hour → night (moonlight, stars, windows glow warm, pool
 glows turquoise). Directional light direction/colour/intensity, sky, fog, env intensity and exposure interpolate.

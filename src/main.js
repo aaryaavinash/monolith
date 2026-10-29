@@ -1,10 +1,9 @@
 import './tailwind.css';
-import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp } from '../../src/core/engine.js';
-import { Assets, firstMesh } from '../../src/core/assets.js';
-import { Pointer } from '../../src/core/input.js';
-import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
-import { preloader, cursor, magnetic } from '../../src/core/ui.js';
+import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp } from './core/engine.js';
+import { Assets, firstMesh } from './core/assets.js';
+import { Pointer } from './core/input.js';
+import { smoothScroll, gsap, reveal } from './core/scroll.js';
+import { preloader, cursor, magnetic } from './core/ui.js';
 import { sunAngles, compassDir, palette, makePalette, phaseName, fmtTime, T0, T1, SUNRISE, SUNSET } from './sun.js';
 import { concreteTextures, floorTexture, patchModel, sectionOutline, GoldenGrade } from './materials.js';
 import { buildDiagram } from './diagram.js';
@@ -217,7 +216,7 @@ const cutLines = {};
 
 // ─── Model ─────────────────────────────────────────────────────────────────────
 const rawToWorld = (x, y, z) => model.localToWorld(new THREE.Vector3(x, y, z));
-const load = assets.gltf('models/monolith/house.glb').then(g => {
+const load = assets.gltf('models/house.glb').then(g => {
   model = g.scene;
   model.rotation.y = Math.PI;
   normalize(model, 4);
@@ -449,7 +448,7 @@ function updateAnchors() {
 const reveal0 = document.querySelector('.work-reveal');
 const revealIn = reveal0.querySelector('.work-reveal-in');
 const revealCap = reveal0.querySelector('figcaption');
-const IMG = n => `${import.meta.env.BASE_URL}img/monolith/${n}.webp`;
+const IMG = n => `${import.meta.env.BASE_URL}img/${n}.webp`;
 ['stal', 'mertola', 'ulvik', 'lajes'].forEach(n => { const i = new Image(); i.src = IMG(n); });
 const rv = { x: innerWidth / 2, y: innerHeight / 2 };
 document.querySelectorAll('.work').forEach(li => {
@@ -646,7 +645,6 @@ const rawToWorldY = y => rawToWorld(0, y, 0).y;
 const rawToWorldX = x => rawToWorld(x, 0, 0).x;
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
-// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('monolith', { theme: 'light', corner: 'br' });
 const curs = cursor({ color: '#111110', blend: 'difference', size: 30 });
 if (curs) curs.root.style.setProperty('--c', '#f2f0ea');
 magnetic();

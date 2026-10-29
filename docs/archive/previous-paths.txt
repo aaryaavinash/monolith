@@ -1,0 +1,18 @@
+// ORIGINAL (preserved, not deleted — disabled by comment): previous nested paths
+// import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp } from '../../src/core/engine.js';
+// import { Assets, firstMesh } from '../../src/core/assets.js';
+// import { Pointer } from '../../src/core/input.js';
+// import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// import { preloader, cursor, magnetic } from '../../src/core/ui.js';
+// const load = assets.gltf('models/monolith/house.glb').then(g => {
+// const IMG = n => `${import.meta.env.BASE_URL}img/monolith/${n}.webp`;
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('monolith', { theme: 'light', corner: 'br' });
+//         <figure class="studio-img"><img src="/img/monolith/studio.webp" alt="Concrete massing models on an oak table in the Lisbon studio, crossed by a shaft of late sun" loading="lazy"><figcaption class="mono">Lisbon studio, Rua das Janelas Verdes — 17:20</figcaption></figure>
+// import { bakeTexture } from '../../src/core/textures.js';
+//   <link rel="stylesheet" href="./examples/monolith/style.css">
+//   <script type="module" src="./examples/monolith/main.js"></script>
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from './core/ui.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('monolith', { theme: 'light', corner: 'br' });
+// ORIGINAL (preserved, not deleted — disabled by comment): old root HTML image paths
+//         <figure class="studio-img"><img src="/img/monolith/studio.webp" alt="Concrete massing models on an oak table in the Lisbon studio, crossed by a shaft of late sun" loading="lazy"><figcaption class="mono">Lisbon studio, Rua das Janelas Verdes — 17:20</figcaption></figure>

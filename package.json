@@ -1,7 +1,7 @@
 {
   "name": "monolith",
   "private": true,
-  "description": "Standalone Monolith world from Dioramas.",
+  "description": "An architecture studio concept for houses shaped first by the sun and the land.",
   "license": "MIT",
   "version": "0.1.0",
   "type": "module",
